@@ -1,0 +1,16 @@
+{
+  "name": "homes-of-horror",
+  "version": "1.0.0",
+  "description": "Collaborative Web Application that searches for Horror Movie Filming Locations using html, css framework, javascript and server side api's as part of DU Bootcamp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./src/input.css -o ./assets/css/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}
