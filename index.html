@@ -7,15 +7,19 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/output.css">
     <link rel="stylesheet" href="./assets/css/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dai+Banna+SIL:ital,wght@0,500;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-black font-xl">
+<body class="bg-black">
     <div>
-        <h1 class="bg-red-700">Homes of Horror</h1>
+        <h1 class="bg-red-700 text-4xl font-bold" id="navB" href="./index.html">Homes of Horror</h1>
     </div>
     <div class="flex justify-center">
         <!-- for some heccin reason the padding and width classes in TW werent working so i used some custom css, please lemme know if yall figure it out -->
-        <div class="bg-slate-600 flex flex-col" id="cSearchForm">
+        
+        <form class="bg-slate-600 flex flex-col w-1/2" id="cSearchForm">
             <div class="flex flex-col">
                 <label for="state">State:</label>
                 <select name="states" id="state">
@@ -76,8 +80,9 @@
                 <label for="movieTitle">Title</label>
                 <input type="text" id="movieTitle" placeholder="Search by movie title">
             </div>
-            <button id="sButton">Search</button>
-        </div>
+            
+            <input id="sButton" type="button" value="Search" onclick="location.href= './search-results.html'"/>
+        </form>
     </div>
 
     <script src="./assets/js/script.js"></script>
