@@ -4,6 +4,7 @@ var searchButton = document.getElementById('sButton')
 
 // Searchpage variables
 var searchContent = document.getElementById('results')
+var searchCheck = document.querySelector('.searchCheck')
 
 
 // Universal (probably) variables
@@ -39,4 +40,23 @@ function doSearch() {
 
 // }
 
-searchButton.addEventListener('click', doSearch);
+if (searchButton) {
+    searchButton.addEventListener('click', doSearch);
+}
+
+if(searchCheck) {
+    var ulE = document.createElement('ul');
+    searchContent.appendChild(ulE);
+
+    for (var i = 0; i < 4; i++) {
+        var li1 = document.createElement('li');
+        li1.setAttribute('class', 'bg-red-300 blah')
+        ulE.appendChild(li1);
+        var blah = document.querySelectorAll('.blah');
+        li1.textContent = 'Friday the 13th is an American horror franchise that comprises twelve slasher films, a television series, novels, comic books, video games, and tie‑in merchandise. The franchise mainly focuses on the fictional character Jason Voorhees, who was thought to have drowned as a boy at Camp Crystal Lake due to the negligence of the camp staff. Decades later, the lake is rumored to be "cursed" and is the setting for a series of mass murders. Jason is featured in all of the films, as either the killer or the motivation for the killings. The original film, created to cash in on the success of Halloween (1978),[1] was written by Victor Miller and was produced and directed by Sean S. Cunningham. The films have grossed over $468 million at the box-office worldwide.';
+    }
+
+    var liE = document.querySelectorAll('li');
+    // liE.setAttribute('') 
+    console.log(liE);
+}
