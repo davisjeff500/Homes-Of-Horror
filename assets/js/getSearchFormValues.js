@@ -11,7 +11,7 @@ function handleSearchFormSubmit(event) {
     return;
   }
 
-  var queryString = './search-results.html?q=' + searchInputVal + '&format=' + formatInputVal;
+  var queryString = 'https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&prop=extracts&titles=' + searchInputVal ;
 
   location.assign(queryString);
 }
