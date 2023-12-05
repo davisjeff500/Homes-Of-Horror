@@ -40,20 +40,35 @@ function doSearch() {
 
 // }
 
+var mapLink = 'https://www.toptal.com/designers/htmlarrows/symbols/'
+
 if (searchButton) {
     searchButton.addEventListener('click', doSearch);
 }
 
 if(searchCheck) {
     var ulE = document.createElement('ul');
+    ulE.setAttribute('class', 'flex flex-col')
     searchContent.appendChild(ulE);
 
     for (var i = 0; i < 4; i++) {
+        // making a list item appended to the ul with a title, styling the font and then adding a description and map link
+        // create list item, append to ul and add text
         var li1 = document.createElement('li');
-        li1.setAttribute('class', 'bg-red-300 blah')
+        li1.setAttribute('class', 'bg-red-300 w-11/12 self-center cusResult text-4xl font-bold border-4 border-red-700 rounded');
         ulE.appendChild(li1);
-        var blah = document.querySelectorAll('.blah');
-        li1.textContent = 'Friday the 13th is an American horror franchise that comprises twelve slasher films, a television series, novels, comic books, video games, and tie‑in merchandise. The franchise mainly focuses on the fictional character Jason Voorhees, who was thought to have drowned as a boy at Camp Crystal Lake due to the negligence of the camp staff. Decades later, the lake is rumored to be "cursed" and is the setting for a series of mass murders. Jason is featured in all of the films, as either the killer or the motivation for the killings. The original film, created to cash in on the success of Halloween (1978),[1] was written by Victor Miller and was produced and directed by Sean S. Cunningham. The films have grossed over $468 million at the box-office worldwide.';
+        li1.textContent = 'Joe Mama';
+        // create description, set attributes and append to list item
+        var words = document.createElement('p');
+        words.setAttribute('class', 'cusDescription');
+        li1.appendChild(words);
+        words.textContent = 'Friday the 13th is an American horror franchise that comprises twelve slasher films, a television series, novels, comic books, video games, and tie‑in merchandise. The franchise mainly focuses on the fictional character Jason Voorhees, who was thought to have drowned as a boy at Camp Crystal Lake due to the negligence of the camp staff. Decades later, the lake is rumored to be "cursed" and is the setting for a series of mass murders. Jason is featured in all of the films, as either the killer or the motivation for the killings. The original film, created to cash in on the success of Halloween (1978),[1] was written by Victor Miller and was produced and directed by Sean S. Cunningham. The films have grossed over $468 million at the box-office worldwide.';
+        // creates map link, sets attributes and appends to list item
+        var mapE = document.createElement('a');
+        mapE.setAttribute('href', mapLink);
+        mapE.setAttribute('class', 'mapLink');
+        li1.appendChild(mapE)
+        mapE.textContent = 'test'
     }
 
     var liE = document.querySelectorAll('li');
