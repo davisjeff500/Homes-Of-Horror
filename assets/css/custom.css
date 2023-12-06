@@ -4,13 +4,30 @@
     padding-left: 1%;
 }
 
+#base {
+    align-items: center;
+}
+
+#siteInfo {
+    font-family: 'Dai Banna SIL','Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 2%;
+}
+
 
 #cSearchForm {
     /* width: 50%; */
     padding: 1%;
-    margin-top: 10%;
+    margin-top: 5%;
     /* justify-content: center; */
-    padding-top: 0%;
+    padding-top: 0.25%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#SBT {
+    margin-bottom: 0.25rem;
 }
 
 #sButton {
@@ -38,7 +55,7 @@
 
 .cusDescription {
     font-family: 'Times New Roman', Times, serif;
-    font-size: medium;
+    font-size: x-large;
     font-weight: 400;
     line-height: normal;
 }
@@ -46,6 +63,12 @@
 .mapLink {
     line-height: normal;
     align-self: flex-end;
+    font-weight: 400;
+    color: #4c2a3f;
+}
+
+.mapLink:visited {
+    color: rgb(70, 70, 70);
 }
 
 

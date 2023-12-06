@@ -20,7 +20,10 @@ Collaborative Web Application that searches for Horror Movie Filming Locations u
 
 
 <h3>Solution Screenshot</h3>
-<img src="assetts/../assets/images/mod2solutionscreen.png">
+<img src="./assets/images/Screenshot1.png">
+<img src="./assets/images/Screenshot2.png">
+<img src="./assets/images/Screenshot3.png">
+<img src="./assets/images/Screenshot4.png">
 
 <h3>Code Source</h3> 
 
@@ -32,4 +35,3 @@ https://github.com/davisjeff500/Homes-Of-Horror
 Please see references in Solution Method
 
 
-T
