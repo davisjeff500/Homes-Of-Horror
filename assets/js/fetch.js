@@ -18,7 +18,7 @@ function fetchData() {
     .then(data => {
       // Format the JSON data
       const formattedData = JSON.stringify(data, null, 2);
-
+      console.log(data))
       // Update the content of the text area
       jsonDisplayTextArea.textContent = formattedData;
 
